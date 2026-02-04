@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chookmata", "Chookmata.csproj", "{BB234462-D406-4089-A718-44306FCB1381}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB234462-D406-4089-A718-44306FCB1381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB234462-D406-4089-A718-44306FCB1381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB234462-D406-4089-A718-44306FCB1381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB234462-D406-4089-A718-44306FCB1381}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A054074-534A-47AA-A6C4-C0E7D608C089}
+	EndGlobalSection
+EndGlobal

@@ -7,6 +7,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
+# User-specific files
+**/config/appsettings.json
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -27,6 +30,11 @@ bld/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+
+
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
