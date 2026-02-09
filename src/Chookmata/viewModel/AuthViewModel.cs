@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chookmata.service
+namespace Chookmata.viewModel
 {
-    public class SteamApiService
+    class AuthViewModel
     {
-
-
     }
 }

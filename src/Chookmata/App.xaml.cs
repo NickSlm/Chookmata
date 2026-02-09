@@ -5,6 +5,7 @@ using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Chookmata.view;
+using Chookmata.viewModel;
 
 namespace Chookmata;
 
@@ -35,8 +36,11 @@ public partial class App : Application
 
     private static void ConfigureServices(IServiceCollection services)
     {
-        services.AddTransient<Overlay>();
+
+        services.AddTransient<AuthWindow>();
+        services.AddTransient<OverlayWindow>();
         services.AddTransient<MainWindow>();
+        services.AddSingleton<MainViewModel>();
 
 
     }

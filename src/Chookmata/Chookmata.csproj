@@ -9,14 +9,80 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Sprites\Hundur\stand_0.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_1.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_10.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_11.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_12.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_13.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_14.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_15.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_2.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_3.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_4.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_5.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_6.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_7.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_8.png" />
+    <None Remove="Assets\Sprites\Hundur\stand_9.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_0.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_1.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_10.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_11.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_12.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_13.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_14.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_15.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_2.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_3.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_4.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_5.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_6.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_7.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_8.png" />
+    <None Remove="Assets\Sprites\Kaling\stand_9.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_0.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_1.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_10.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_11.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_12.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_13.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_14.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_15.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_2.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_3.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_4.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_5.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_6.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_7.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_8.png" />
+    <None Remove="Assets\Sprites\Qiongpi\stand_9.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_0.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_1.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_10.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_11.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_12.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_13.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_14.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_15.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_2.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_3.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_4.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_5.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_6.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_7.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_8.png" />
+    <None Remove="Assets\Sprites\Taowu\stand_9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="interface\" />
     <Folder Include="model\" />
     <Folder Include="service\" />
-   <Folder Include="viewModel\" />
-	  <Folder Include="view\" />
   </ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="AspNet.Security.OpenId.Steam" Version="8.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
 		<PackageReference Include="Extended.Wpf.Toolkit" Version="5.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
@@ -26,6 +92,201 @@
 		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.9" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.9" />
 
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Assets\Sprites\Hundur\stand_0.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_10.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_11.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_12.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_13.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_14.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_15.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_3.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_4.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_5.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_6.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_7.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_8.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Hundur\stand_9.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_0.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_10.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_11.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_12.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_13.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_14.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_15.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_3.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_4.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_5.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_6.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_7.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_8.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Kaling\stand_9.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_0.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_10.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_11.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_12.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_13.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_14.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_15.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_3.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_4.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_5.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_6.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_7.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_8.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Qiongpi\stand_9.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_0.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_1.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_10.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_11.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_12.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_13.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_14.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_15.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_3.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_4.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_5.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_6.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_7.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_8.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Taowu\stand_9.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
 	</ItemGroup>
 	
 	

@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chookmata"
         mc:Ignorable="d"
+        WindowStartupLocation="Manual"
+        Background="Transparent"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image 
+               Source="{Binding Hundur.CurrentFrame}"
+               Grid.Column="0"/>
+        <Image
+               Source="{Binding Qiongpi.CurrentFrame}"
+               Grid.Column="1" />
+        <Image 
+               Source="{Binding Taowu.CurrentFrame}"
+               Grid.Column="2" />
+        <Image 
+               Source="{Binding Kaling.CurrentFrame}"
+               Grid.Column="3" />
     </Grid>
 </Window>

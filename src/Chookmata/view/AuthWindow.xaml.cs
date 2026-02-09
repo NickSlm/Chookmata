@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Chookmata.view
 {
     /// <summary>
-    /// Interaction logic for Overlay.xaml
+    /// Interaction logic for AuthWindow.xaml
     /// </summary>
-    public partial class Overlay : Window
+    public partial class AuthWindow : Window
     {
-        public Overlay()
+        public AuthWindow()
         {
             InitializeComponent();
         }

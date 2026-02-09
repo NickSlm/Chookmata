@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Chookmata.viewModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,8 +17,12 @@ namespace Chookmata;
 /// </summary>
 public partial class MainWindow : Window
 {
-    public MainWindow()
+    private MainViewModel _viewModel;
+
+    public MainWindow(MainViewModel viewModel)
     {
+        _viewModel = viewModel;
+        DataContext = _viewModel;
         InitializeComponent();
     }
 }
