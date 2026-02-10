@@ -25,4 +25,8 @@ public partial class MainWindow : Window
         DataContext = _viewModel;
         InitializeComponent();
     }
+    private void MainWindow_Closed(object sender, EventArgs e)
+    {
+        Application.Current.Shutdown();
+    }
 }

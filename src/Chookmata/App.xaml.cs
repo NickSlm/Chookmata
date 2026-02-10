@@ -32,21 +32,17 @@ public partial class App : Application
         mainWindow.Show();
 
     }
-
+    protected override void OnExit(ExitEventArgs e)
+    {
+        base.OnExit(e);
+    }
 
     private static void ConfigureServices(IServiceCollection services)
     {
-
         services.AddTransient<AuthWindow>();
         services.AddTransient<OverlayWindow>();
         services.AddTransient<MainWindow>();
         services.AddSingleton<MainViewModel>();
-
-
     }
-
-
-
-
 }
 

@@ -1,6 +1,8 @@
 ﻿using Chookmata.viewModel;
 using System.Diagnostics;
+using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 public class SpriteViewModel : BaseViewModel
 {

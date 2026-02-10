@@ -1,0 +1,12 @@
+{
+  "Window": {
+    "TopPos": 0,
+    "LeftPos": 0
+  },
+  "Hotkeys": {
+    "Overlay": {
+      "ModifierKey": "Control",
+      "MainKey": "F"
+    }
+  }
+}
