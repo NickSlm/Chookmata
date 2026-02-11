@@ -8,8 +8,8 @@
         mc:Ignorable="d"
         Topmost="True"
         WindowStyle="None"
-        Top="0"
-        Left="0"
+        Top="300"
+        Left="378"
         WindowStartupLocation="Manual"
         AllowsTransparency="True"
         Background="Transparent"
@@ -40,7 +40,8 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-            
         
     </Grid>
+
+
 </Window>
