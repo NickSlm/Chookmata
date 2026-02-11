@@ -73,7 +73,10 @@
     <None Remove="Assets\Sprites\Qiongpi\stand_7.png" />
     <None Remove="Assets\Sprites\Qiongpi\stand_8.png" />
     <None Remove="Assets\Sprites\Qiongpi\stand_9.png" />
-    <None Remove="Assets\Sprites\Strings\1.png" />
+    <None Remove="Assets\Sprites\Strings\P2.png" />
+    <None Remove="Assets\Sprites\Strings\P3.png" />
+    <None Remove="Assets\Sprites\Strings\QIONGPI.png" />
+    <None Remove="Assets\Sprites\Strings\TAOWU.png" />
     <None Remove="Assets\Sprites\Taowu\stand_0.png" />
     <None Remove="Assets\Sprites\Taowu\stand_1.png" />
     <None Remove="Assets\Sprites\Taowu\stand_10.png" />
@@ -317,7 +320,19 @@
 	  <Resource Include="Assets\Sprites\Qiongpi\stand_9.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Resource>
-	  <Resource Include="Assets\Sprites\Strings\1.png">
+	  <Resource Include="Assets\Sprites\Strings\HUNDUR.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Strings\P2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Strings\P3.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Strings\QIONGPI.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Assets\Sprites\Strings\TAOWU.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Resource>
 	  <Resource Include="Assets\Sprites\Taowu\stand_0.png">

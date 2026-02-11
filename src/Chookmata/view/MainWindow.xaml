@@ -8,8 +8,8 @@
         mc:Ignorable="d"
         Topmost="True"
         WindowStyle="None"
-        Top="300"
-        Left="378"
+        Top="0"
+        Left="0"
         WindowStartupLocation="Manual"
         AllowsTransparency="True"
         Background="Transparent"
@@ -17,7 +17,11 @@
         Closed="MainWindow_Closed"
         Title="MainWindow" Height="240" Width="582">
     <Grid HorizontalAlignment="Center">
-        <ItemsControl ItemsSource="{Binding Sprites}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ItemsControl ItemsSource="{Binding Sprites}" Grid.Row="0">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" />
@@ -25,22 +29,13 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-
-                    
-                    
-                    
-                    
                     <Button Style="{StaticResource MaterialDesignFlatButton}" Height="108" Width="108" Padding="0" Margin="3 0 3 0">
                         <Image Height="108" Width="108" Source="{Binding CurrentFrame}" Margin="0" />
                     </Button>
-                    
-                    
-                    
-                    
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        
+        <Image Source="/Assets/Sprites/Strings/P3.png" Grid.Row="1" Opacity="0.5"></Image>       
     </Grid>
 
 
