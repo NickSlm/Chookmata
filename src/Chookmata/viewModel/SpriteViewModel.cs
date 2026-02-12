@@ -6,47 +6,43 @@ using System.Windows.Media.Imaging;
 
 public class SpriteViewModel : BaseViewModel
 {
-    private readonly List<ImageSource> _frames;
-    private int _index;
-    private readonly double _frameDurationMs;
-    private readonly Stopwatch _stopwatch = new Stopwatch();
-    private double _lastFrameTimeMs;
+    private bool _selected = false;
+    private string _path;
 
-    public ImageSource CurrentFrame { get; private set; }
-
-    public SpriteViewModel(IEnumerable<ImageSource> frames, double fps = 16)
+    public SpriteViewModel(string path)
     {
-        _frames = new List<ImageSource>(frames);
-        if (_frames.Count == 0) throw new ArgumentException("No frames provided");
-
-        CurrentFrame = _frames[0];
-        _frameDurationMs = 1000.0 / fps;
+        _path = path;
+        InitializeAssets();
     }
 
-    public void Start()
+    private void InitializeAssets()
     {
-        _stopwatch.Restart();
-        _lastFrameTimeMs = 0;
-        CompositionTarget.Rendering += OnRendering;
+        IdleImage = Load($"pack://application:,,,/{_path}/idle.png");
+        StringImage = Load($"pack://application:,,,/{_path}/string.png");
     }
 
-    public void Stop()
+    private ImageSource Load(string uriString)
     {
-        CompositionTarget.Rendering -= OnRendering;
-        _stopwatch.Stop();
+        var bitmap = new BitmapImage();
+        bitmap.BeginInit();
+        bitmap.UriSource = new Uri(uriString, UriKind.Absolute);
+        bitmap.CacheOption = BitmapCacheOption.OnLoad;
+        bitmap.EndInit();
+        bitmap.Freeze();
+
+        return bitmap;
     }
 
-    private void OnRendering(object sender, EventArgs e)
+    public ImageSource IdleImage { get; private set; }
+    public ImageSource StringImage { get; private set; }
+    public bool Selected
     {
-        double totalElapsedMs = _stopwatch.Elapsed.TotalMilliseconds;
-
-        while (totalElapsedMs - _lastFrameTimeMs >= _frameDurationMs)
+        get => _selected;
+        set
         {
-            _lastFrameTimeMs += _frameDurationMs;
-
-            _index = (_index + 1) % _frames.Count;
-            CurrentFrame = _frames[_index];
-            OnPropertyChanged(nameof(CurrentFrame));
+            _selected = value;
+            OnPropertyChanged(nameof(Selected));
         }
     }
+
 }

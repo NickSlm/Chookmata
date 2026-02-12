@@ -11,32 +11,66 @@
         Top="0"
         Left="0"
         WindowStartupLocation="Manual"
+        ResizeMode="NoResize"
         AllowsTransparency="True"
         Background="Transparent"
         ShowInTaskbar="False"
         Closed="MainWindow_Closed"
-        Title="MainWindow" Height="240" Width="582">
-    <Grid HorizontalAlignment="Center">
+        Title="MainWindow"
+        Height="240"
+        Width="582">
+
+
+
+        <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <ItemsControl ItemsSource="{Binding Sprites}" Grid.Row="0">
+        <DockPanel HorizontalAlignment="Left"
+                   MouseDown="TitleBar_MouseDown"
+                   Cursor="Hand">
+            <materialDesign:PackIcon Kind="DragVariant"
+                                     Foreground="White"
+                                      />
+        </DockPanel>
+        <ItemsControl ItemsSource="{Binding Sprites}"
+                      HorizontalAlignment="Center"
+                      Grid.Row="1">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" />
+                    <StackPanel Orientation="Horizontal" />
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Button Style="{StaticResource MaterialDesignFlatButton}" Height="108" Width="108" Padding="0" Margin="3 0 3 0">
-                        <Image Height="108" Width="108" Source="{Binding CurrentFrame}" Margin="0" />
+                    <Button Style="{StaticResource MaterialDesignFlatButton}"
+                            Grid.Row="0"
+                            Height="108"
+                            Width="108"
+                            Padding="0"
+                            Command="{Binding DataContext.SelectCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                            CommandParameter="{Binding}"
+                            Margin="3 0 3 0">
+                        <Image Height="108"
+                               Width="108"
+                               Source="{Binding IdleImage}"
+                               Margin="0"
+                               RenderOptions.BitmapScalingMode="HighQuality" />
                     </Button>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <Image Source="/Assets/Sprites/Strings/P3.png" Grid.Row="1" Opacity="0.5"></Image>       
+        <Image Grid.Row="2"
+               HorizontalAlignment="Center"
+               Source="{Binding SelectedPhase}"
+               RenderOptions.BitmapScalingMode="HighQuality" 
+               Height="120"
+               Width="240"/>
+        
+        
     </Grid>
-
+            
 
 </Window>
